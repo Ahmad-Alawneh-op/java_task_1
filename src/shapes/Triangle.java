@@ -1,7 +1,6 @@
 package shapes;
 
 public class Triangle extends Shape {
-
     private double base;
     private double height;
     private double sideA;

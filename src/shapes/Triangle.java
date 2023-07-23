@@ -2,10 +2,10 @@ package shapes;
 
 public class Triangle extends Shape {
 
-    public double base;
-    public double height;
-    public double sideA;
-    public double sideC;
+    private double base;
+    private double height;
+    private double sideA;
+    private double sideC;
 
     public Triangle(double base, double height, double sideA, double sideC) {
         setBase(base);

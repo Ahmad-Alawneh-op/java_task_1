@@ -25,12 +25,12 @@ public class Circle extends Shape {
 
     @Override
     public double calculateArea() {
-        return Math.PI * this.radius * this.radius;
+        return (22.0 / 7) * this.radius * this.radius;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2 * Math.PI * this.radius;
+        return 2 * (22.0 / 7) * this.radius;
     }
 
     public static double calculateArea(double radius) throws IllegalArgumentException{
@@ -38,7 +38,7 @@ public class Circle extends Shape {
             throw new IllegalArgumentException("Circle radius must be a positive number");
         }
 
-        return Math.PI * radius * radius;
+        return (22.0 / 7) * radius * radius;
     }
 
     public String toString() {

@@ -6,7 +6,7 @@ public class Triangle extends Shape {
     private double sideA;
     private double sideC;
 
-    public Triangle(double base, double height, double sideA, double sideC) throws IllegalArgumentException{
+    public Triangle(double base, double height, double sideA, double sideC) throws IllegalArgumentException {
         setBase(base);
         setHeight(height);
         setSideA(sideA);

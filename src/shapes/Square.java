@@ -3,19 +3,17 @@ package shapes;
 public class Square extends Shape {
     private double length;
 
-    public Square(double length) {
+    public Square(double length) throws IllegalArgumentException {
         setLength(length);
     }
 
     public Square() {
-        this(0);
+
     }
 
-    public void setLength(double length) {
+    public void setLength(double length) throws IllegalArgumentException {
         if (length < 0) {
-            this.length = 0;
-
-            return;
+            throw new IllegalArgumentException("Square length must be a positive number");
         }
 
         this.length = length;
@@ -35,11 +33,19 @@ public class Square extends Shape {
         return 4 * this.length;
     }
 
-    public static double calculateArea(double length) {
+    public static double calculateArea(double length) throws IllegalArgumentException {
         if (length < 0) {
-            return 0;
+            throw new IllegalArgumentException("Square length must be a positive number");
         }
 
         return 4 * length;
+    }
+
+    public String toString() {
+        return "Square" + "\n" +
+                "Length: " + this.length + "\n" +
+                "Area: " + this.calculateArea() + "\n" +
+                "Perimeter: " + this.calculatePerimeter() + "\n" +
+                "---------------------\n";
     }
 }

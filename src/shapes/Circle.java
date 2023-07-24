@@ -33,7 +33,7 @@ public class Circle extends Shape {
         return 2 * (22.0 / 7) * this.radius;
     }
 
-    public static double calculateArea(double radius) throws IllegalArgumentException{
+    public static double calculateArea(double radius) throws IllegalArgumentException {
         if (radius < 0) {
             throw new IllegalArgumentException("Circle radius must be a positive number");
         }

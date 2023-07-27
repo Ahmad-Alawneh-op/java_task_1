@@ -34,7 +34,7 @@ public class Square extends Shape {
     }
 
     public static double calculateArea(double length) throws IllegalArgumentException {
-        if (length < 0) {
+        if (length <= 0) {
             throw new IllegalArgumentException("Square length must be a positive number");
         }
 

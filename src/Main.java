@@ -5,16 +5,20 @@ import shapes.Triangle;
 
 public class Main {
 
+    public static void printShape(Shape s) {
+        System.out.println(s);
+    }
+
     public static void main(String[] args) {
         try {
             Shape s1 = new Square(5);
-            System.out.println(s1);
+            printShape(s1);
 
             Shape s2 = new Circle(3);
-            System.out.println(s2);
+            printShape(s2);
 
             Shape s3 = new Triangle(3, 4, 5, 6);
-            System.out.println(s3);
+            printShape(s3);
 
             // Testing static overloaded methods
             System.out.println("Square: " + Square.calculateArea(10));

@@ -18,7 +18,7 @@ public class Triangle extends Shape {
     }
 
     public void setBase(double base) throws IllegalArgumentException {
-        if (base < 0) {
+        if (base <= 0) {
             throw new IllegalArgumentException("Triangle base must be a positive number");
         }
 
@@ -30,7 +30,7 @@ public class Triangle extends Shape {
     }
 
     public void setHeight(double height) throws IllegalArgumentException {
-        if (height < 0) {
+        if (height <= 0) {
             throw new IllegalArgumentException("Triangle height must be a positive number");
         }
 
@@ -42,7 +42,7 @@ public class Triangle extends Shape {
     }
 
     public void setSideA(double sideA) throws IllegalArgumentException {
-        if (sideA < 0) {
+        if (sideA <= 0) {
             throw new IllegalArgumentException("Triangle sideA must be a positive number");
         }
 
@@ -54,7 +54,7 @@ public class Triangle extends Shape {
     }
 
     public void setSideC(double sideC) throws IllegalArgumentException {
-        if (sideC < 0) {
+        if (sideC <= 0) {
             throw new IllegalArgumentException("Triangle sideC must be a positive number");
         }
 
@@ -76,11 +76,11 @@ public class Triangle extends Shape {
     }
 
     public static double calculateArea(double base, double height) throws IllegalArgumentException {
-        if (base < 0) {
+        if (base <= 0) {
             throw new IllegalArgumentException("Triangle base must be a positive number");
         }
 
-        if (height < 0) {
+        if (height <= 0) {
             throw new IllegalArgumentException("Triangle height must be a positive number");
         }
 

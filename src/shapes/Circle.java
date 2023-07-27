@@ -12,7 +12,7 @@ public class Circle extends Shape {
     }
 
     public void setRadius(double radius) throws IllegalArgumentException {
-        if (radius < 0) {
+        if (radius <= 0) {
             throw new IllegalArgumentException("Circle radius must be a positive number");
         }
 
@@ -34,7 +34,7 @@ public class Circle extends Shape {
     }
 
     public static double calculateArea(double radius) throws IllegalArgumentException {
-        if (radius < 0) {
+        if (radius <= 0) {
             throw new IllegalArgumentException("Circle radius must be a positive number");
         }
 

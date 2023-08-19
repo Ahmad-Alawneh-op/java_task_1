@@ -38,7 +38,7 @@ public class Square extends Shape {
             throw new IllegalArgumentException("Square length must be a positive number");
         }
 
-        return 4 * length;
+        return length * length;
     }
 
     public String toString() {

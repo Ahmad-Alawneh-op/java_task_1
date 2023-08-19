@@ -8,7 +8,7 @@ import static org.mockito.Mockito.when;
 
 public class TriangleTest {
     @Test
-    void constructor_whenValidParams_thenSetMemberVariablesCorrectly() {
+    void constructor_whenParamsValid_thenSetMemberVariablesCorrectly() {
         Triangle triangle = new Triangle(3, 4, 5, 6);
 
         assertAll(
@@ -20,7 +20,7 @@ public class TriangleTest {
     }
 
     @Test
-    void constructor_whenInvalidParams_thenThrowError() {
+    void constructor_whenParamsInvalid_thenThrowError() {
         assertThrows(IllegalArgumentException.class, () -> new Triangle(3, 4, 5, -1));
     }
 
@@ -119,7 +119,7 @@ public class TriangleTest {
     }
 
     @Test
-    void staticCalculateArea_whenValidParams_thenReturnAreaCorrectly() {
+    void staticCalculateArea_whenParamsValid_thenReturnAreaCorrectly() {
         assertEquals(Triangle.calculateArea(3, 4), 6);
     }
 
